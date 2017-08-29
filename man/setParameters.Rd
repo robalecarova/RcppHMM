@@ -6,7 +6,7 @@ Set the model parameters
 }
 
 \description{
-Function used to set the model parameters. This function verifies that all the parameters size agree with the names size.    
+Function used to set the model parameters. This function verifies that all the parameters size agree with each other.    
 }
 
 \usage{

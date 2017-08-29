@@ -67,8 +67,8 @@ length <- 100
 observationSequence <- generateObservations(HMM, length)
 
 #Sequence evaluation
-evaluation(HMM, observationSequence$Y)
-evaluation(HMM, observationSequence$Y, "b")
+evaluation(HMM, observationSequence$Y)  # It assumes that it will be evaluated using the forward algorithm
+evaluation(HMM, observationSequence$Y, "b") # The user sets the backward algorithm to evaluate the algorithm
 }
 
 \keyword{methods}

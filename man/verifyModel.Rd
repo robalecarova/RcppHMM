@@ -18,7 +18,7 @@ verifyModel(model)
 }
 
 \details{
-The model must have an stochastic transition matrix and an stochastic initial probability vector, also the row and column sizes must coincide with the number of provided state names. If the model uses categorical values, the emission matrix also must be stochastic and must have a column for each observation name and a row for each state name. And if the model uses discrete data, all the values must be positive.  
+The model must have a stochastic transition matrix and a stochastic initial probability vector, also the row and column sizes must coincide with the number of provided state names. If the model uses categorical values, the emission matrix also must be stochastic and must have a column for each observation label and a row for each state name. And if the model uses discrete data, all the values must be positive assuming that they are counts.  
 }
 
 \value{
