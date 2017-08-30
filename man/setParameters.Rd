@@ -6,7 +6,7 @@ Set the model parameters
 }
 
 \description{
-Function used to set the model parameters. This function verifies that all the parameters size agree with each other.    
+Function used to set the model parameters. This function verifies that parameters and names correspond.
 }
 
 \usage{
@@ -14,8 +14,8 @@ setParameters(hmm , params)
 }
 
 \arguments{
-  \item{hmm}{a list that contains all the necesary variables to define a hidden Markov model.}
-  \item{params}{a list with the new parameters to set in the model.}
+  \item{hmm}{a list with the necessary variables to define a hidden Markov model.}
+  \item{params}{a list with the new parameters to be set in the model.}
 }
 
 \value{
