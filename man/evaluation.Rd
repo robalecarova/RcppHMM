@@ -14,17 +14,17 @@ evaluation(hmm , sequence , method = "f" )
 }
 
 \arguments{
-  \item{hmm}{a list that contains all the necesary variables to define a hidden Markov model.}
-  \item{sequence}{a vector that contains a sequence of observations to be evaluated.}
-  \item{method}{method especified to do the evaluation}
+  \item{hmm}{a list with the necessary variables to define a hidden Markov model.}
+  \item{sequence}{a vector that contains the sequence of observations to be evaluated.}
+  \item{method}{method specified to perform the evaluation}
 }
 
 \details{
-The methods to be selected can be "f" for the forward algorithm and "b" for the backward algorithm.
+The methods to be selected can be "f" for the forward algorithm or "b" for the backward algorithm.
 }
 
 \value{
-A value that represents the log likelihood of the sequence given the hiddden Markov model.
+A value that represents the log-likelihood of the sequence given the hiddden Markov model.
 }
 
 \references{
@@ -37,6 +37,7 @@ Cited references are listed on the \link{RcppHMM} manual page.
 }
 
 \examples{
+# Multinomial case
 # Set the model parameters
 n <- c("First","Second")
 m <- c("A","T","C","G")

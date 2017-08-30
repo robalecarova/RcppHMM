@@ -13,14 +13,17 @@ Expectation-Maximization algorithm to estimate the model parameters based on a s
 learnEM(hmm, sequences, iter = 100, delta = 1e-05, pseudo = 0, print = TRUE )
 }
 
-
 \arguments{
-  \item{hmm}{a list that contains all the necesary variables to define a hidden Markov model.}
-  \item{sequences}{a matrix that contains in each row a sequence of observations to be evaluated.}
-  \item{iter}{a value that sets the maximum number of iterations to be done.}
+  \item{hmm}{a list with the necessary variables to define a hidden Markov model.}
+  \item{sequences}{a matrix with the observations training set.}
+  \item{iter}{a value that sets the maximum number of iterations to run.}
   \item{delta}{a value set to be the minimum error considered as a convergence criteria.}
   \item{pseudo}{a value set to consider pseudo-counts.}
-  \item{print}{a logical value to print the errar at each iteration.}
+  \item{print}{a logical value to print the error at each iteration.}
+}
+
+\details{
+  This function can be used for univariate or multivariate distributions. When using the former, the input is a 2D matrix where each row represents a sequence of observations. Whilst, in the latter, the input is a 3D matrix where each slice represents a different observation sequence and each row represents a different dimension of the observation sequence.
 }
 
 \value{
@@ -31,12 +34,12 @@ A \code{"\link{list}"} that contains the estimated hidden Markov model parameter
 Cited references are listed on the \link{RcppHMM} manual page.
 }
 
-
 \seealso{
 \code{\link{generateObservations}} , \code{\link{verifyModel}}
 }
 
 \examples{
+# Multinomial case 
 # Set the model parameters to be estimated
 n <- c("First","Second")
 m <- c("A","T","C","G")

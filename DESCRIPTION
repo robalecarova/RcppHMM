@@ -1,7 +1,7 @@
 Package: RcppHMM
 Type: Package
 Title: Rcpp Hidden Markov Model
-Version: 1.2
+Version: 1.2.1
 Date: 2017-08-29
 Author: Roberto A. Cardenas-Ovando, Julieta Noguez and Claudia Rangel-Escareno
 Maintainer: Roberto A. Cardenas-Ovando <robalecarova@gmail.com>

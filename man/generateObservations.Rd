@@ -6,7 +6,7 @@ Generate observations given a model
 }
 
 \description{
-Function used to generate observations given a hidden Markov model.
+Function used to generate simulated observations given a hidden Markov model.
 }
 
 \usage{
@@ -15,17 +15,18 @@ generateObservations(hmm, length)
 
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{hmm}{a list that contains all the necesary variables to define a hidden Markov model.}
-  \item{length}{a value that sets how many observations will be generated.}
+  \item{hmm}{a list with the necessary variables to define a hidden Markov model.}
+  \item{length}{the number of observations will be generated.}
 }
 
 \value{
 A \code{"\link{list}"} that contains the generated observations and the hidden state that generated it.
-  \item{X}{a vector with path of hidden states traversed.}
+  \item{X}{a vector representing the path of hidden states.}
   \item{Y}{a vector with the generated observations.}
 }
 
 \examples{
+# Multinomial case
 # Set the model parameters
 n <- c("First","Second")
 m <- c("A","T","C","G")
